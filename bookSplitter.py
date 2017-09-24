@@ -56,7 +56,7 @@ for l in languages:
     fw = codecs.open(file_name + "_" + l + ".txt",'w', encoding = 'utf-8')
     #loop over every word
     for j in range(len(english)):
-        fw.write(english[j].rstrip().lstrip() + ", " + collection[i][j].rstrip().lstrip() + "\n")
+        fw.write(collection[i][j].rstrip().lstrip() + ", " + english[j].rstrip().lstrip()  + "\n")
     fw.close()
     i += 1
     print l + " has been written"
